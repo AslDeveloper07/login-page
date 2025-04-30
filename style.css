@@ -13,11 +13,12 @@ body {
     padding: 40px 20px;
     transition: all 0.5s;
     border-radius: 20px;
-    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 0px 2px #FFFFFF, 0px 0px 0px 3px #0000001e;
+    backdrop-filter: blur(15%);
 }
 
 .card:hover {
-    box-shadow: 0px 1px 21px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 5px 31px -5px rgba(0,0,0,0.57);
 }
 
 .form {
@@ -56,7 +57,17 @@ label {
     font-size: 14px;
     margin-bottom: 5px;
 }
+.porag{
+    font-size: 15px;
+}
+a{
+    color: #155fff;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: dashed;
 
+}
 .btn {
     text-transform: uppercase;
     border-radius: 10px;
@@ -66,14 +77,14 @@ label {
     border: none;
     font-size: 18px;
     color: white;
-    background: linear-gradient(180deg, #4480FF 0%, #115DFC 50%, #0550ED 100%);
+    background: rgb(0, 149, 246);
     cursor: pointer;
     transition: all 0.4s ease;
 }
 
 .btn:hover {
-    background: linear-gradient(180deg, #115DFC 0%, #4480FF 100%);
-
+    background: rgb(0, 149, 246);
+    opacity: .7;
 }
 
 .svg {
@@ -88,7 +99,7 @@ label {
 
 .social {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -129,7 +140,21 @@ label {
 .github:hover {
     border: 1px solid #4480FF;
 }
-
+.flex-row {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #2d79f3;
+    font-weight: 500;
+    cursor: pointer;
+  }
 .github img {
     width: 20%;
 }
