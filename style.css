@@ -1,49 +1,63 @@
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-display: flex;
-justify-content: center;
-margin-top: 400px;
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.card{
+
+.card {
     width: 20%;
     padding: 40px 20px;
     transition: all 0.5s;
     border-radius: 20px;
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.75);
 }
-.card:hover{
-    box-shadow:  0px 1px 21px 2px rgba(0,0,0,0.75);
+
+.card:hover {
+    box-shadow: 0px 1px 21px 2px rgba(0, 0, 0, 0.75);
 }
-.form{
+
+.form {
     display: flex;
     flex-direction: column;
     margin-top: 10px;
 }
-.inputs{
+
+.inputs {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
 }
-.input{
+
+.input {
     padding: 10px 12px;
     border-radius: 8px;
     border: 1px solid black;
 }
+
+.input:hover {
+
+    border: 1px solid rgb(0, 132, 255);
+
+}
+
 .input:focus {
     outline: none;
     /* box-shadow: 11px -10px 10px -10px rgba(0,0,0,0.84) ; */
     border: 1px solid rgb(0, 132, 255);
 
 
-  }
-label{
+}
+
+label {
     font-size: 14px;
     margin-bottom: 5px;
 }
-.btn{
+
+.btn {
     text-transform: uppercase;
     border-radius: 20px;
     padding: 10px 20px;
@@ -52,14 +66,70 @@ label{
     border: none;
     font-size: 18px;
     color: white;
-    background:  linear-gradient(180deg, #4480FF 0%, #115DFC 50%, #0550ED 100%);
+    background: linear-gradient(180deg, #4480FF 0%, #115DFC 50%, #0550ED 100%);
     cursor: pointer;
     transition: all 0.4s ease;
 }
-.btn:hover{
-    background:  linear-gradient(180deg, #115DFC 0%,  #4480FF 100%);
+
+.btn:hover {
+    background: linear-gradient(180deg, #115DFC 0%, #4480FF 100%);
 
 }
-.svg img{
+
+.svg {
+    display: flex;
+    justify-content: center;
+
+}
+
+.svg img {
     width: 30%;
+}
+
+.social {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.5s ease;
+    padding: 10px 20px;
+    background-color: #eeeeee;
+}
+
+.google img {
+    width: 25%;
+}
+
+.google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+    background-color: #eeeeee;
+}
+
+.google:hover {
+    border: 1px solid #4480FF;
+}
+
+.github:hover {
+    border: 1px solid #4480FF;
+}
+
+.github img {
+    width: 25%;
 }
