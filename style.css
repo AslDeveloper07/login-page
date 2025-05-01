@@ -1,12 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    margin-top: 300px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
 
 .card {
     width: 20%;
@@ -33,38 +24,17 @@ body {
     margin-top: 20px;
 }
 
-.input {
-    padding: 10px 12px;
-    border-radius: 8px;
-    border: 1px solid black;
-}
 
-.input:hover {
-
-    border: 1px solid rgb(0, 132, 255);
-
-}
-
-.input:focus {
-    outline: none;
-    /* box-shadow: 11px -10px 10px -10px rgba(0,0,0,0.84) ; */
-    border: 1px solid rgb(0, 132, 255);
-
-
-}
-
-label {
-    font-size: 14px;
-    margin-bottom: 5px;
-}
 .porag{
-    font-size: 12px;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 14px;
 }
-a{
+.anchor{
     color: #155fff;
     text-decoration: none;
 }
-a:hover{
+.anchor:hover{
     text-decoration: dashed;
 
 }
@@ -75,7 +45,7 @@ a:hover{
     margin-top: 20px;
     font-weight: 500;
     border: none;
-    font-size: 18px;
+    font-size: 17px;
     color: white;
     background: rgb(0, 149, 246);
     cursor: pointer;
@@ -135,17 +105,21 @@ a:hover{
 
 .google:hover {
     border: 1px solid #4480FF;
+    background-color: #f3f3f3;
 }
 
 .github:hover {
     border: 1px solid #4480FF;
+    background-color: #f3f3f3;
+
 }
 .flex-row {
-    margin-top: 5px;
+    margin-top: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    font-size: 14px;
     justify-content: space-between;
   }
   .span {
