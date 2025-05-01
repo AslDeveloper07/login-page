@@ -24,6 +24,8 @@
     padding: 32px;
     border-radius: 16px;
     transition: all 0.3s ease-in;
+    backdrop-filter:blur(10%,);
+
   }
   .container:hover{
     box-shadow: 1px 13px 28px -3px rgba(0,0,0,0.49);
@@ -116,6 +118,13 @@
   .btn:hover {
     background-color: #2563eb;
   }
+  /* Error massage  */
+  p{
+    color: red;
+    font-size: 15px;
+    text-align: center;
+    display: none;
+  }
 
   /* Sign up */
   .signup {
@@ -162,7 +171,7 @@
   .social-btn img {
     width: 24px;
   }
-  
+
 
   /* Responsive tweaks */
   @media (max-width: 480px) {

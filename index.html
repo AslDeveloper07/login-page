@@ -16,11 +16,11 @@
     </div>
 
     <!-- Form -->
-    <form class="form">
+    <div class="form">
       <!-- Email -->
       <div class="input-group">
         <span class="icon">@</span>
-        <input type="email" placeholder="Enter your email..." class="input" />
+        <input id="email" type="email" placeholder="Enter your email..." class="input" />
       </div>
 
       <!-- Password -->
@@ -30,7 +30,7 @@
           <i class="ri-key-line"></i>
 
         </span>
-        <input type="password" placeholder="Enter your password..." class="input" />
+        <input id="password" type="password" placeholder="Enter your password..." class="input" />
       </div>
 
       <!-- Remember + Forgot -->
@@ -40,11 +40,16 @@
       </div>
 
       <!-- Submit -->
-      <button type="submit" class="btn">Sign In</button>
+      <button id="btn" type="submit" class="btn">Sign In</button>
+
+      <!-- error massage -->
+       <p id="poragraph">
+        Qayerdadir xatolik yuz berdi
+       </p>
 
       <!-- Sign up -->
       <p class="signup">Don't have an account? <a href="#">Sign up</a></p>
-    </form>
+    </div>
 
     <!-- Social login -->
     <div class="socials">
@@ -56,5 +61,6 @@
       </div>
     </div>
   </div>
+  <script src="./app.js"></script>
 </body>
 </html>
