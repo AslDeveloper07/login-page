@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-br from-blue-100 to-purple-200">
+  <div class="w-full max-w-md bg-white rounded-2xl shadow-lg p-8">
+    <!-- Logo -->
+    <div class="flex justify-center mb-6">
+      <img src="./svg/google.svg" alt="Logo" class="w-16 h-16">
+    </div>
+
+    <!-- Form -->
+    <form class="space-y-5">
+      <!-- Email input -->
+      <div class="relative">
+        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <span class="text-gray-400 text-lg">@</span>
+        </div>
+        <input
+          type="email"
+          placeholder="Email manzilingiz"
+          class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+      </div>
+
+      <!-- Password input -->
+      <div class="relative">
+        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+          <!-- Key icon -->
+          <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2"
+               viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15 7a2 2 0 110 4 2 2 0 010-4zm0 0L7 19H5v-2H3v-2h2v-2h2l8-8z" />
+          </svg>
+        </div>
+        <input
+          type="password"
+          placeholder="Parolingiz"
+          class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+      </div>
+
+      <!-- Remember & Forgot -->
+      <div class="flex items-center justify-between text-sm text-gray-600">
+        <label class="flex items-center space-x-2">
+          <input type="checkbox" class="accent-blue-500">
+          <span>Remember me</span>
+        </label>
+        <a href="#" class="text-blue-500 hover:underline">Forgot password?</a>
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit"
+              class="w-full bg-blue-500 text-white py-2 rounded-lg font-semibold hover:bg-blue-600 transition">
+        Sign In
+      </button>
+
+      <!-- Sign up -->
+      <p class="text-center text-sm text-gray-600">
+        Don't have an account?
+        <a href="#" class="text-blue-500 hover:underline">Sign up</a>
+      </p>
+    </form>
+
+    <!-- Social login -->
+    <div class="mt-6 flex items-center gap-4">
+      <div class="flex justify-center items-center w-1/2 border rounded-lg p-2 bg-gray-100 hover:border-blue-500 transition">
+        <img src="./svg/google (1).svg" alt="Google" class="w-6">
+      </div>
+      <div class="flex justify-center items-center w-1/2 border rounded-lg p-2 bg-gray-100 hover:border-blue-500 transition">
+        <img src="./svg/github.svg" alt="GitHub" class="w-6">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,67 +1,60 @@
 <!DOCTYPE html>
-<html lang="en"
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login page </title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<body class="flex items-center justify-center min-h-screen bg-gray-90">
-    <div class="card">
-        <div class="svg">
-            <img src="./svg/google.svg" alt="google svg">
-        </div>
-        <form class="form">
-            <div class="inputs">
-
-                <div class="relative">
-                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                        <span class="text-gray-400 text-lg">@</span>
-                    </div>
-                    <input type="email" placeholder="Email"
-                        class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                </div>
-            </div>
-            <div class="inputs">
-                <div class="relative">
-                    <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-
-                        <svg class="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" stroke-width="2"
-                            viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M15 7a2 2 0 110 4 2 2 0 010-4zm0 0L7 19H5v-2H3v-2h2v-2h2l8-8z" />
-                        </svg>
-                    </div>
-                    <input type="password" placeholder="Parol"
-                        class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
-                </div>
-
-                <div class="flex-row">
-                    <div>
-                        <input type="checkbox">
-                        <label>Remember me </label>
-                    </div>
-                    <span class="span">Forgot password?</span>
-                </div>
-                <button class="btn">
-                    sign in
-                </button>
-                <p class="porag">
-                    Don't have an account? <a href="#" class="anchor"> Sign up</a>
-                </p>
-        </form>
-        <div class="social">
-            <div class="google">
-                <img src="./svg/google (1).svg" alt="google accaunt">
-            </div>
-            <div class="github">
-                <img src="./svg/github.svg" alt="git hub accaunt">
-            </div>
-        </div>
+<body>
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="./svg/google.svg" alt="Logo">
     </div>
-</body>
 
+    <!-- Form -->
+    <form class="form">
+      <!-- Email -->
+      <div class="input-group">
+        <span class="icon">@</span>
+        <input type="email" placeholder="Email manzilingiz" class="input" />
+      </div>
+
+      <!-- Password -->
+      <div class="input-group">
+        <span class="icon">
+          <!-- Key icon -->
+          <svg class="key-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M15 7a2 2 0 110 4 2 2 0 010-4zm0 0L7 19H5v-2H3v-2h2v-2h2l8-8z" />
+          </svg>
+        </span>
+        <input type="password" placeholder="Parolingiz" class="input" />
+      </div>
+
+      <!-- Remember + Forgot -->
+      <div class="options">
+        <label><input type="checkbox" /> Remember me</label>
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="btn">Sign In</button>
+
+      <!-- Sign up -->
+      <p class="signup">Don't have an account? <a href="#">Sign up</a></p>
+    </form>
+
+    <!-- Social login -->
+    <div class="socials">
+      <div class="social-btn">
+        <img src="./svg/google (1).svg" alt="Google">
+      </div>
+      <div class="social-btn">
+        <img src="./svg/github.svg" alt="GitHub">
+      </div>
+    </div>
+  </div>
+</body>
 </html>
