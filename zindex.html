@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Stas Neprokin Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 1200vh;
+  padding: 16px;
+}
+
+/* Profile Container */
+.profile-container {
+  width: 100%;
+  max-width: 40rem;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header: Cover image */
+.cover-image {
+  position: relative;
+  height: 12rem;
+  background-image: url('https://source.unsplash.com/random/1000x400');
+  background-size: cover;
+  background-position: center;
+}
+
+.cover-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Avatar Container */
+.avatar-container {
+  position: absolute;
+  bottom: -4rem;
+  left: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.avatar {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+}
+
+.username {
+  font-size: 0.875rem;
+  color: #63b3ed;
+}
+
+/* Action Icons */
+.action-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1rem;
+  color: white;
+}
+
+.icon-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: #e2e8f0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #4a5568;
+  font-size: 1.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+.icon-btn:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.follow-btn {
+  padding: 0.5rem 1.5rem;
+  background-color: black;
+  color: white;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.follow-btn:hover {
+  background-color: #2d3748;
+}
+
+/* Profile Body */
+.profile-body {
+  padding: 6rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* Bio */
+.bio {
+  font-size: 0.875rem;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+/* Followers / Following */
+.followers-following {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.followers-following-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+/* User Details */
+.user-details {
+  margin-bottom: 1.5rem;
+}
+
+.section-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #4a5568;
+  margin-bottom: 1rem;
+}
+
+.user-info-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  font-size: 0.875rem;
+  color: #4a5568;
+}
+
+.user-info-item {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.user-info-item i {
+  color: #cbd5e0;
+  font-size: 1.25rem;
+}
+
+  </style>
+
+  <!-- AOS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init();
+    });
+  </script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen px-4">
+
+  <div class="profile-container" data-aos="fade-up">
+
+    <!-- Header: Cover image -->
+    <div class="cover-image">
+      <div class="cover-overlay"></div>
+
+      <!-- Avatar -->
+      <div class="avatar-container" data-aos="zoom-in">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar" class="avatar" />
+        <div>
+          <h1 class="name">Stas Neprokin</h1>
+          <p class="username">@sneprokin</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Icons (3 dots, email, follow button) -->
+    <div class="action-icons">
+      <button class="icon-btn">
+        <i class="ri-more-2-line"></i>
+      </button>
+
+      <button class="icon-btn">
+        <i class="ri-mail-line"></i>
+      </button>
+
+      <button class="follow-btn">
+        Follow
+      </button>
+    </div>
+
+    <!-- Profile Body -->
+    <div class="profile-body">
+
+      <!-- Bio -->
+      <p class="bio">Designing Products that Users Love</p>
+
+      <!-- Followers / Following -->
+      <div class="followers-following" data-aos="fade-up">
+        <span class="followers-following-item">
+          <i class="ri-user-3-line"></i> 143 Following
+        </span>
+        <span class="followers-following-item">
+          <i class="ri-group-line"></i> 149 Followers
+        </span>
+      </div>
+
+      <!-- User Details -->
+      <div class="user-details">
+        <h3 class="section-title">User Information</h3>
+        <ul class="user-info-list">
+          <!-- User Information Items -->
+          <li class="user-info-item">
+            <i class="ri-user-line"></i>
+            Full Name: Stas Neprokin
+          </li>
+          <li class="user-info-item">
+            <i class="ri-mail-line"></i>
+            Email: stas@neprokin.com
+          </li>
+          <li class="user-info-item">
+            <i class="ri-phone-line"></i>
+            Phone: +123 456 7890
+          </li>
+          <li class="user-info-item">
+            <i class="ri-map-pin-line"></i>
+            Location: New York, USA
+          </li>
+          <li class="user-info-item">
+            <i class="ri-building-line"></i>
+            Company: Neprokin Enterprises
+          </li>
+          <li class="user-info-item">
+            <i class="ri-calendar-line"></i>
+            Date of Birth: November 7, 1987
+          </li>
+          <li class="user-info-item">
+            <i class="ri-global-line"></i>
+            Website: www.neprokin.com
+          </li>
+          <li class="user-info-item">
+            <i class="ri-briefcase-line"></i>
+            Occupation: Entrepreneur
+          </li>
+          <li class="user-info-item">
+            <i class="ri-award-line"></i>
+            Awards: 5
+          </li>
+          <li class="user-info-item">
+            <i class="ri-time-line"></i>
+            Joined: November 2010
+          </li>
+          <li class="user-info-item">
+            <i class="ri-heart-line"></i>
+            Interests: Tech, Design, Business
+          </li>
+          <li class="user-info-item">
+            <i class="ri-twitter-line"></i>
+            Twitter: @sneprokin
+          </li>
+          <li class="user-info-item">
+            <i class="ri-linkedin-line"></i>
+            LinkedIn: Stas Neprokin
+          </li>
+          <li class="user-info-item">
+            <i class="ri-facebook-line"></i>
+            Facebook: Stas Neprokin
+          </li>
+          <li class="user-info-item">
+            <i class="ri-instagram-line"></i>
+            Instagram: @stasneprokin
+          </li>
+          <li class="user-info-item">
+            <i class="ri-github-line"></i>
+            GitHub: @stasneprokin
+          </li>
+          <li class="user-info-item">
+            <i class="ri-globe-line"></i>
+            Blog: neprokin.com/blog
+          </li>
+          <li class="user-info-item">
+            <i class="ri-git-branch-line"></i>
+            Projects: 12
+          </li>
+          <li class="user-info-item">
+            <i class="ri-file-line"></i>
+            Documents: 30
+          </li>
+          <li class="user-info-item">
+            <i class="ri-download-line"></i>
+            Downloads: 50
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
