@@ -1,0 +1,187 @@
+
+/* General Styles */
+body {
+    background-color: #f7fafc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Profile Container */
+.profile-container {
+    width: 100%;
+    max-width: 35rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Header: Cover image */
+.cover-image {
+    position: relative;
+    height: 12rem;
+    background-image: url('https://source.unsplash.com/random/1000x400');
+    background-size: cover;
+    background-position: center;
+}
+
+.cover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    background: linear-gradient(196deg, rgba(255, 170, 33, 1) 0%, rgba(255, 0, 0, 1) 100%);
+}
+
+.cover-overlay img {
+    width: 40%;
+    position: relative;
+    right: -350px;
+    top: -17px;
+    overflow: hidden;
+}
+
+/* Avatar Container */
+.avatar-container {
+    position: absolute;
+    bottom: -4rem;
+    left: 1.5rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.avatar {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    border: 4px solid rgba(255, 170, 33, 1);
+    box-shadow: 0px 0px 37px 3px rgba(255, 170, 33, 1);
+}
+
+.name {
+    font-size: 1.6rem;
+    position: relative;
+    top: 17px;
+    bottom: -2px;
+    font-weight: bold;
+    color: black;
+}
+
+.username {
+    font-size: 0.875rem;
+    color: #63b3ed;
+    position: relative;
+    top: 10px;
+}
+
+/* Action Icons */
+.action-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    padding: 1rem;
+    color: white;
+}
+
+.icon-btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #ffffff;
+    border: 1px solid rgba(128, 128, 128, 0.205);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4a5568;
+    font-size: 1.25rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.icon-btn:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.follow-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.follow-btn:hover {
+    background-color: #2d3748;
+}
+
+/* Profile Body */
+.profile-body {
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* Bio */
+.bio {
+    font-size: 0.875rem;
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
+/* Followers / Following */
+.followers-following {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 1rem;
+}
+
+.followers-following-item {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+/* User Details */
+.user-details {
+    margin-bottom: 1.5rem;
+}
+
+.section-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.user-info-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    font-size: 0.875rem;
+    color: #4a5568;
+}
+
+.user-info-item {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.user-info-item i {
+    background: linear-gradient(196deg, rgba(255, 170, 33, 1) 0%, rgba(255, 0, 0, 1) 100%);
+    background: linear-gradient(45deg, #ff6b6b, #f8e71c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.25rem;
+}
