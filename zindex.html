@@ -23,7 +23,7 @@ body {
 /* Profile Container */
 .profile-container {
   width: 100%;
-  max-width: 40rem;
+  max-width: 35rem;
   background-color: white;
   border-radius: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -45,7 +45,15 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  height: 200px;
+  background: linear-gradient(196deg,rgba(255, 170, 33, 1) 0%, rgba(255, 0, 0, 1) 100%);
+}
+.cover-overlay img{
+  width: 45%;
+  position: relative;
+  right: -330px;
+  top: -25px;
+  overflow: hidden;
 }
 
 /* Avatar Container */
@@ -62,12 +70,15 @@ body {
   width: 6rem;
   height: 6rem;
   border-radius: 50%;
-  border: 4px solid white;
+  border: 4px solid rgb(0, 255, 34);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .name {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  position: relative;
+  top: 17px;
+  bottom: -2px;
   font-weight: bold;
   color: black;
 }
@@ -75,6 +86,8 @@ body {
 .username {
   font-size: 0.875rem;
   color: #63b3ed;
+  position: relative;
+  top: 10px;
 }
 
 /* Action Icons */
@@ -89,7 +102,8 @@ body {
 .icon-btn {
   width: 2.5rem;
   height: 2.5rem;
-  background-color: #e2e8f0;
+  background-color: #ffffff;
+  border: 1px solid rgba(128, 128, 128, 0.205);
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -120,7 +134,7 @@ body {
 
 /* Profile Body */
 .profile-body {
-  padding: 6rem 1.5rem 1.5rem 1.5rem;
+  padding: 1rem 1.5rem 1.5rem 1.5rem;
 }
 
 /* Bio */
@@ -155,13 +169,14 @@ body {
   font-size: 1.125rem;
   font-weight: 600;
   color: #4a5568;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .user-info-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
+  gap: 0.8rem;
   font-size: 0.875rem;
   color: #4a5568;
 }
@@ -173,7 +188,10 @@ body {
 }
 
 .user-info-item i {
-  color: #cbd5e0;
+  background: linear-gradient(196deg,rgba(255, 170, 33, 1) 0%, rgba(255, 0, 0, 1) 100%);
+  background: linear-gradient(45deg, #ff6b6b, #f8e71c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: 1.25rem;
 }
 
@@ -196,14 +214,17 @@ body {
 
     <!-- Header: Cover image -->
     <div class="cover-image">
-      <div class="cover-overlay"></div>
+      <div class="cover-overlay">
+        <img src="./img/designer.png" alt="Overlay Icon"
+       />
+      </div>
 
       <!-- Avatar -->
       <div class="avatar-container" data-aos="zoom-in">
         <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Avatar" class="avatar" />
         <div>
-          <h1 class="name">Stas Neprokin</h1>
-          <p class="username">@sneprokin</p>
+          <h1 class="name">Asilbek</h1>
+          <p class="username">@Suvonov</p>
         </div>
       </div>
     </div>
@@ -215,7 +236,7 @@ body {
       </button>
 
       <button class="icon-btn">
-        <i class="ri-mail-line"></i>
+        <i class="ri-chat-3-line"></i>
       </button>
 
       <button class="follow-btn">
@@ -227,7 +248,7 @@ body {
     <div class="profile-body">
 
       <!-- Bio -->
-      <p class="bio">Designing Products that Users Love</p>
+      <p class="bio">Ota-onang sendan faxrlanmaguncha harakatdan tuxtama! </p>
 
       <!-- Followers / Following -->
       <div class="followers-following" data-aos="fade-up">
@@ -241,40 +262,40 @@ body {
 
       <!-- User Details -->
       <div class="user-details">
-        <h3 class="section-title">User Information</h3>
+        <h3 class="section-title">Foydalanuvchi ma'lumotlari</h3>
         <ul class="user-info-list">
           <!-- User Information Items -->
           <li class="user-info-item">
             <i class="ri-user-line"></i>
-            Full Name: Stas Neprokin
+            Full Name: Asilbek Suvonov
           </li>
           <li class="user-info-item">
             <i class="ri-mail-line"></i>
-            Email: stas@neprokin.com
+            Email: Asilbek@gmail.com
           </li>
           <li class="user-info-item">
             <i class="ri-phone-line"></i>
-            Phone: +123 456 7890
+            Phone: +998 88 703 13 86
           </li>
           <li class="user-info-item">
             <i class="ri-map-pin-line"></i>
-            Location: New York, USA
+            Location: Uzbekistan
           </li>
           <li class="user-info-item">
             <i class="ri-building-line"></i>
-            Company: Neprokin Enterprises
+            Company: Sfera Academy
           </li>
           <li class="user-info-item">
             <i class="ri-calendar-line"></i>
-            Date of Birth: November 7, 1987
+            Date of Birth: July - 06, 2008
           </li>
           <li class="user-info-item">
             <i class="ri-global-line"></i>
-            Website: www.neprokin.com
+            Website: www.LoginPage.com
           </li>
           <li class="user-info-item">
             <i class="ri-briefcase-line"></i>
-            Occupation: Entrepreneur
+            Occupation: Junior
           </li>
           <li class="user-info-item">
             <i class="ri-award-line"></i>
@@ -282,35 +303,35 @@ body {
           </li>
           <li class="user-info-item">
             <i class="ri-time-line"></i>
-            Joined: November 2010
+            Joined: september 2024
           </li>
           <li class="user-info-item">
             <i class="ri-heart-line"></i>
-            Interests: Tech, Design, Business
+            Interests: Design, Developer
           </li>
           <li class="user-info-item">
             <i class="ri-twitter-line"></i>
-            Twitter: @sneprokin
+            Twitter: @Asilbek
           </li>
           <li class="user-info-item">
             <i class="ri-linkedin-line"></i>
-            LinkedIn: Stas Neprokin
+            LinkedIn: Asilbekjon777
           </li>
           <li class="user-info-item">
             <i class="ri-facebook-line"></i>
-            Facebook: Stas Neprokin
+            Facebook:Asilbek.uz
           </li>
           <li class="user-info-item">
             <i class="ri-instagram-line"></i>
-            Instagram: @stasneprokin
+            Instagram: @Asilc1k_ake
           </li>
           <li class="user-info-item">
             <i class="ri-github-line"></i>
-            GitHub: @stasneprokin
+            GitHub: @AslDeveloper07
           </li>
           <li class="user-info-item">
             <i class="ri-globe-line"></i>
-            Blog: neprokin.com/blog
+            Blog: @manoli_izoxlarim
           </li>
           <li class="user-info-item">
             <i class="ri-git-branch-line"></i>

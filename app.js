@@ -15,6 +15,7 @@ getButton.addEventListener('click', () => {
     if (getEmail.value === users.email && getPassword.value === users.password) {
         alert("successfull💖")
         poragraph.style.display = 'none'
+        window.location.href="./"
     } else {
         poragraph.style.display = 'block'
 
