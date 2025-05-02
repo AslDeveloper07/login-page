@@ -1,204 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stas Neprokin Profile</title>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* General Styles */
-body {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f7fafc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 1200vh;
-  padding: 16px;
-}
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7fafc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 1200vh;
+      padding: 16px;
+    }
 
-/* Profile Container */
-.profile-container {
-  width: 100%;
-  max-width: 35rem;
-  background-color: white;
-  border-radius: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-}
+    /* Profile Container */
+    .profile-container {
+      width: 100%;
+      max-width: 35rem;
+      background-color: white;
+      border-radius: 1rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
 
-/* Header: Cover image */
-.cover-image {
-  position: relative;
-  height: 12rem;
-  background-image: url('https://source.unsplash.com/random/1000x400');
-  background-size: cover;
-  background-position: center;
-}
+    /* Header: Cover image */
+    .cover-image {
+      position: relative;
+      height: 12rem;
+      background-image: url('https://source.unsplash.com/random/1000x400');
+      background-size: cover;
+      background-position: center;
+    }
 
-.cover-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 200px;
-  background: linear-gradient(196deg,rgba(255, 170, 33, 1) 0%, rgba(255, 0, 0, 1) 100%);
-}
-.cover-overlay img{
-  width: 40%;
-  position: relative;
-  right: -350px;
-  top: -17px;
-  overflow: hidden;
-}
+    .cover-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 200px;
+      background: linear-gradient(196deg, rgba(255, 170, 33, 1) 0%, rgba(255, 0, 0, 1) 100%);
+    }
 
-/* Avatar Container */
-.avatar-container {
-  position: absolute;
-  bottom: -4rem;
-  left: 1.5rem;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
+    .cover-overlay img {
+      width: 40%;
+      position: relative;
+      right: -350px;
+      top: -17px;
+      overflow: hidden;
+    }
 
-.avatar {
-  width: 6rem;
-  height: 6rem;
-  border-radius: 50%;
-  border: 4px solid rgba(255, 170, 33, 1);
-  box-shadow:  0px 0px 37px 3px rgba(255, 170, 33, 1);
-}
+    /* Avatar Container */
+    .avatar-container {
+      position: absolute;
+      bottom: -4rem;
+      left: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+    }
 
-.name {
-  font-size: 1.6rem;
-  position: relative;
-  top: 17px;
-  bottom: -2px;
-  font-weight: bold;
-  color: black;
-}
+    .avatar {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      border: 4px solid rgba(255, 170, 33, 1);
+      box-shadow: 0px 0px 37px 3px rgba(255, 170, 33, 1);
+    }
 
-.username {
-  font-size: 0.875rem;
-  color: #63b3ed;
-  position: relative;
-  top: 10px;
-}
+    .name {
+      font-size: 1.6rem;
+      position: relative;
+      top: 17px;
+      bottom: -2px;
+      font-weight: bold;
+      color: black;
+    }
 
-/* Action Icons */
-.action-icons {
-  display: flex;
-  justify-content: flex-end;
-  gap: 1rem;
-  padding: 1rem;
-  color: white;
-}
+    .username {
+      font-size: 0.875rem;
+      color: #63b3ed;
+      position: relative;
+      top: 10px;
+    }
 
-.icon-btn {
-  width: 2.5rem;
-  height: 2.5rem;
-  background-color: #ffffff;
-  border: 1px solid rgba(128, 128, 128, 0.205);
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #4a5568;
-  font-size: 1.25rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s;
-}
+    /* Action Icons */
+    .action-icons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
+      padding: 1rem;
+      color: white;
+    }
 
-.icon-btn:hover {
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
-}
+    .icon-btn {
+      width: 2.5rem;
+      height: 2.5rem;
+      background-color: #ffffff;
+      border: 1px solid rgba(128, 128, 128, 0.205);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #4a5568;
+      font-size: 1.25rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+    }
 
-.follow-btn {
-  padding: 0.5rem 1.5rem;
-  background-color: black;
-  color: white;
-  border-radius: 9999px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  transition: background-color 0.3s;
-}
+    .icon-btn:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    }
 
-.follow-btn:hover {
-  background-color: #2d3748;
-}
+    .follow-btn {
+      padding: 0.5rem 1.5rem;
+      background-color: black;
+      color: white;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      transition: background-color 0.3s;
+    }
 
-/* Profile Body */
-.profile-body {
-  padding: 1rem 1.5rem 1.5rem 1.5rem;
-}
+    .follow-btn:hover {
+      background-color: #2d3748;
+    }
 
-/* Bio */
-.bio {
-  font-size: 0.875rem;
-  color: #4a5568;
-  margin-bottom: 1rem;
-}
+    /* Profile Body */
+    .profile-body {
+      padding: 1rem 1.5rem 1.5rem 1.5rem;
+    }
 
-/* Followers / Following */
-.followers-following {
-  display: flex;
-  gap: 1.5rem;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #4a5568;
-  margin-bottom: 1rem;
-}
+    /* Bio */
+    .bio {
+      font-size: 0.875rem;
+      color: #4a5568;
+      margin-bottom: 1rem;
+    }
 
-.followers-following-item {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
+    /* Followers / Following */
+    .followers-following {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #4a5568;
+      margin-bottom: 1rem;
+    }
 
-/* User Details */
-.user-details {
-  margin-bottom: 1.5rem;
-}
+    .followers-following-item {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
 
-.section-title {
-  font-size: 1.125rem;
-  font-weight: 600;
-  color: #4a5568;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-}
+    /* User Details */
+    .user-details {
+      margin-bottom: 1.5rem;
+    }
 
-.user-info-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.8rem;
-  font-size: 0.875rem;
-  color: #4a5568;
-}
+    .section-title {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #4a5568;
+      margin-top: 2rem;
+      margin-bottom: 1.5rem;
+    }
 
-.user-info-item {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
-}
+    .user-info-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+      font-size: 0.875rem;
+      color: #4a5568;
+    }
 
-.user-info-item i {
-  background: linear-gradient(196deg,rgba(255, 170, 33, 1) 0%, rgba(255, 0, 0, 1) 100%);
-  background: linear-gradient(45deg, #ff6b6b, #f8e71c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 1.25rem;
-}
+    .user-info-item {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
 
+    .user-info-item i {
+      background: linear-gradient(196deg, rgba(255, 170, 33, 1) 0%, rgba(255, 0, 0, 1) 100%);
+      background: linear-gradient(45deg, #ff6b6b, #f8e71c);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 1.25rem;
+    }
   </style>
 
   <!-- AOS -->
-  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <script defer src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
 
   <script defer>
@@ -208,6 +209,7 @@ body {
   </script>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body class="bg-gray-100 flex items-center justify-center min-h-screen px-4">
 
   <div class="profile-container" data-aos="fade-up">
@@ -215,8 +217,7 @@ body {
     <!-- Header: Cover image -->
     <div class="cover-image">
       <div class="cover-overlay">
-        <img src="./img/books-and-apple.png" alt="Overlay Icon"
-       />
+        <img src="./img/books-and-apple.png" alt="Overlay Icon" />
       </div>
 
       <!-- Avatar -->
@@ -267,83 +268,163 @@ body {
           <!-- User Information Items -->
           <li class="user-info-item">
             <i class="ri-user-line"></i>
-            Full Name: Asilbek Suvonov
+            <p>
+              Full Name: <span>
+                Asilbek Suvonov
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-mail-line"></i>
-            Email: Asilbek@gmail.com
+            <p>
+              Email: <span>
+                Asilbek@gmail.com
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-phone-line"></i>
-            Phone: +998 88 703 13 86
+            <p>
+              Phone: <span>
+                +998 88 703 13 86
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-map-pin-line"></i>
-            Location: Uzbekistan
+            <p>
+              Location: <span>
+                Uzbekistan
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-building-line"></i>
-            Company: Sfera Academy
+            <p>
+              Company: <span>
+                Sfera Academy
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-calendar-line"></i>
-            Date of Birth: July - 06, 2008
+            <p>
+              Date of Birth: <span>
+                July - 06, 2008
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-global-line"></i>
-            Website: www.LoginPage.com
+            <p>
+              Website: <span>
+                www.LoginPage.com
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-briefcase-line"></i>
-            Occupation: Junior
+            <p>
+              Occupation: <span>
+                Junior
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-award-line"></i>
-            Awards: 5
+            <p>
+              Awards: <span>
+                5
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-time-line"></i>
-            Joined: september 2024
+            <p>
+              Joined: <span>
+                september 2024
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-heart-line"></i>
-            Interests: Design, Developer
+            <p>
+              Joined: <span>
+                september 2024
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-twitter-line"></i>
-            Twitter: @Asilbek
+            <p>
+              Twitter: <span>
+                @Asilbek
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-linkedin-line"></i>
-            LinkedIn: Asilbekjon777
+            <p>
+              LinkedIn: <span>
+                Asilbekjon777
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-facebook-line"></i>
-            Facebook:Asilbek.uz
+            <p>
+              Facebook: <span>
+                Asilbek.uz
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-instagram-line"></i>
-            Instagram: @Asilc1k_ake
+            <p>
+              Instagram: <span>
+                @Asilc1k_ake
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-github-line"></i>
-            GitHub: @AslDeveloper07
+            <p>
+              GitHub: <span>
+                @AslDeveloper07
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-globe-line"></i>
-            Blog: @manoli_izoxlarim
+            <p>
+              Blog: <span>
+                @manoli_izoxlarim
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-git-branch-line"></i>
-            Projects: 12
+            <p>
+              Projects: <span>
+                12
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-file-line"></i>
-            Documents: 30
+            <p>
+              Documents: <span>
+                30
+              </span>
+            </p>
           </li>
           <li class="user-info-item">
             <i class="ri-download-line"></i>
-            Downloads: 50
+            <p>
+              Downloads: <span>
+                50
+              </span>
+            </p>
           </li>
         </ul>
       </div>
@@ -354,4 +435,5 @@ body {
   <script src="app.js"></script>
 
 </body>
+
 </html>
