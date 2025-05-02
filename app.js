@@ -85,8 +85,13 @@ let paragraph = document.querySelector('#paragraph');
 let firstName = document.querySelector('.name');
 let userName = document.querySelector('.username');
 let avatar = document.querySelector('.avatar');
-let text = document.querySelector('.bio')
-let fullNames = document.querySelector()
+let text = document.querySelector('.bio');
+let fullNames = document.querySelector('.infoValue');
+let emailAdress=document.querySelector('.infoEmail');
+let numberPhone= document.querySelector('.infoNumber')
+
+// console.log(Number);
+
 
 
 let getUserInfo = JSON.parse(localStorage.getItem('user'));
