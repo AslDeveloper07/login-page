@@ -40,10 +40,10 @@ body {
 }
 
 .cover-overlay img {
-    width: 40%;
+    width: 44%;
     position: relative;
     right: -350px;
-    top: -17px;
+    top: -30px;
     overflow: hidden;
 }
 

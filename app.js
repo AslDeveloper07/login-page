@@ -204,7 +204,7 @@ if (getButton) {
         if (user) {
             if (paragraph) paragraph.style.display = 'none';
             localStorage.setItem('user', JSON.stringify(user));
-            window.location.href = "./zindex.html";
+            window.location.href = "./GetUserPage.html";
         } else {
             if (paragraph) paragraph.style.display = 'block';
         }
